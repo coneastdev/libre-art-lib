@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+<div style="width: 80%; margin: 0 auto;">
+    <div style="width: 50%; margin: 2vw auto;">
+    <input id="search" type="search" aria-label="Search" style="width: 90%;" placeholder="{{ query }}" />
+    <button onclick="search('main')" class="btn-solid btn-icon theme-secondary" type="submit">
+        <i class="bi bi-search"></i>
+    </button>
+    </div>
+</div>
+{% endblock %}
